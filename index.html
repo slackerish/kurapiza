@@ -30,14 +30,73 @@
             </div>
         </div>
     <main>
-    <h1>Kurapiza.to</h1>
-    <img src="" />
-      <div class="samerow">
-    <button>animes</button>
-    <button>discord</button>
-    <button>Home</button>
-    <button>search</button>
-    <button>account</button>
+<div id="xmain-wrapper">
+            <div id="mw-top">
+                <div class="container">
+                    <div class="mwt-content">
+                        <div class="mwt-icon"><img src="https://anipaca.fun/public/images/waifu.gif" onerror="this.onerror=null; this.src='<?= $websiteUrl ?>/public/images/zorowaifu.png';">
+                        </div>
+                        <div class="mwh-logo">
+                            <a href="<?= $websiteUrl ?>/home" class="mwh-logo-div">
+                                <img src="<?= $websiteLogo ?>" alt="<?= $websiteTitle ?>">
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="xsearch" class="home-search">
+                            <div class="search-content">
+                                <form action="<?= $websiteUrl ?>/search" autocomplete="off" id="search-form">
+                                    <div class="search-submit">
+                                        <div class="search-icon btn-search" id="search-button"><i class="fa fa-search"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control search-input" name="keyword"
+                                        placeholder="Search anime..." required>
+                                </form>
+                            </div>
+                            <div class="xhashtag">
+                                <span class="title">Top search:</span>
+
+                               
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Dandadan" class="item">Dandadan</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=One+Piece" class="item">One Piece</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Solo+leveling" class="item">Solo Leveling</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Jujutsu%20Kaisen%202nd%20Season"
+                                    class="item">Jujutsu Kaisen 2nd Season
+                                    Movie</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Blue+Lock" class="item">Blue Lock
+                                </a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=The%20Eminence%20in%20Shadow" class="item">The
+                                    Eminence in
+                                    Shadow</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Frieren%3A%20Beyond%20Journey%27s%20End" class="item">Frieren: Beyond Journey's End</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=Dragon%20Ball%20Daima"
+                                    class="item">Dragon Ball Daima</a>
+
+                                <a href="<?= $websiteUrl ?>/search?keyword=My%20Hero%20Academia%20Season%207" class="item">My Hero Academia Season 7</a>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div id="action-button" style="display: flex; gap: 10px;">
+                            <a href="<?= $websiteUrl ?>/home" class="btn btn-lg btn-radius btn-primary"> Watch Anime <i
+                                    class="fas fa-arrow-circle-right ml-2"></i></a>
+                            <?php if (!isset($_COOKIE['userID'])): ?>
+                            <a href="<?= $websiteUrl ?>/login" class="btn btn-lg btn-radius btn-secondary"> Login <i
+                                    class="fas fa-user ml-2"></i></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="mw-body">
                 <div class="container">
                     
@@ -209,6 +268,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+    
+    
     <br>
     <h3>Community</h3>
     <div class="view">
