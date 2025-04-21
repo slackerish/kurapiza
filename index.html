@@ -226,12 +226,37 @@
       <div class="block"></div>
     </div>
     </main>
-    <footer>
-      <a href="">bye</a>
-      <a href="">this</a>
-      <a href="">is</a>
-      <a href="">a</a>
-      <a href="">footer</a>
-    </footer>
+<div id="xfooter-about">
+            <div class="container">
+                <p class="copyright">©
+                    <?php echo date("Y"); ?> <a href="<?= $websiteUrl ?>">PacaHat</a>. All rights reserved.
+                </p>
+            </div>
+        </div>
+        <!--End: Footer-->
+    </div>
+    <img src="https://anipaca.fun/yamete.php?domain=<?= urlencode($_SERVER['HTTP_HOST']) ?>&trackingId=UwU" style="width:0; height:0; visibility:hidden;">
+
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=<?= $version ?>"></script>
+    <script type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js?v=<?= $version ?>"></script>
+   <script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        document.getElementById('search-form').submit();
+    });
+</script>
+ <script>
+        $(document).ready(function () {
+            $("#xheader_browser").click(function (e) {
+                $("#xheader_menu, #xheader_browser").toggleClass("active");
+            });
+            $('.btn-search').click(function () {
+                if ($('.search-input').val().trim() !== "") {
+                    $('#search-form').submit();
+                }
+            });
+        });
+    </script>
   </body>
 </html>
